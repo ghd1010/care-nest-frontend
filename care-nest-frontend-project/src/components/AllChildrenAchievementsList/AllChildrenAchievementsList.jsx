@@ -27,31 +27,40 @@ function AllChildrenAchievementsList() {
     
     // for this function bellow: title is just a string we will give it, achievements is an array
     function getSingleChildAchievement(title, achievements) {
+        const className = title.toLowerCase();
         return (
-        <div className='ach-container '>
-            <h2>{title}</h2>
-            <ul>
-            {achievements.map(achievement=> (
-                            <li key={achievement.id}>
-                                <strong>{achievement.title}</strong>
-                                {' '} ({achievement.achievement_type}) – {' '}
-                                {achievement.child.first_name} {achievement.child.last_name}
-                                <button onClick={() => navigate(`/children/${achievement.child.id}/achievements/`)}>View</button>
-                            </li>
-                            ))}
+            <div className="achievement-section">
+            <h2 className={`achievement-title ${className}`}>{title}</h2>
+            <ul className="achievement-list">
+            {achievements.map((achievement) => (
+                <li className="achievement-item" key={achievement.id}>
+                <span>
+                    <strong>{achievement.title}</strong> ({achievement.achievement_type}) – {' '}
+                    {achievement.child.first_name} {achievement.child.last_name}
+                </span>
+                <button
+                    onClick={() =>
+                        navigate(`/children/${achievement.child.id}/achievements/`)
+                    }
+                >
+                    View
+                </button>
+                </li>
+            ))}
             </ul>
         </div>
         )
     }
 
     return (
-        <div>
-        <h1 id='h1-ahci'>Children Achievements</h1>
-        {getSingleChildAchievement('Toddlers', toddlers)} 
-        {getSingleChildAchievement('Preschoolers', preschoolers)}
-        <button onClick={() => navigate(`/achievements/add`)}>Add</button>
+        <div className="all-achievements-wrapper">
+            <h1 id="h1-achievements">Children Achievements</h1>
+            {getSingleChildAchievement('Toddlers', toddlers)}
+            {getSingleChildAchievement('Preschoolers', preschoolers)}
+            <button onClick={() => navigate(`/achievements/add`)}>Add</button>
         </div>
-    )
+        )
+
 }
 
 export default AllChildrenAchievementsList

@@ -92,14 +92,12 @@ npm run dev
 ![viewsecatt](assets/view-section-attendance.png)
 ### Add Attendance Page
 ![addattendance](assets/add-attendance.png)
-#### View Sections Page
+#### Edit Attendance Page
 ![editattend](assets/edit-attendance.png)
 ### Selectin Section Attendance Page
 ![choosesection](assets/choose-section.png)
 ### Achievements Page
 ![achievemetspage](assets/achievements.png)
-### Add Achievements Page
-![addachievemetspage](assets/add-achievement.png)
 ### Add Achievements Page
 ![addachievemetspage](assets/add-achievement.png)
 ### View Achievements Page
@@ -109,7 +107,7 @@ npm run dev
 ### Parent Interfaces
 #### Home Page
 ![home-pagparent](assets/welcome-parent.png)
-#### VMy Children Page
+#### My Children Page
 ![mychildren](assets/mychildren-parent.png)
 #### My Child Details Page
 ![mychildrendetails](assets/mychild-details.png)
@@ -146,12 +144,12 @@ npm run dev
 ## IceBox Features
 
 1. Implementing a customized user type
-2. Add staff (employees that the supervisor can track too)
+2. Add staff (employees that the supervisor can track)
 3. Add the `Post` model for communication between daycare and parents
 4. Add the OTP code "Exit Code"
 5. Add subscriptions and offers
 6. Add food preferences for each child
 7. Better UI/UX
 8. Profile page for users
-9. Parents should not Signup, because in real world, parent went first to the daycare, register their data there, and give them their acccounts. but I created the Sign up because its required to have a Signup page.
+9. Parents should not Signup, because in real world, parent went first to the daycare, register their data there, and give them their acccounts. but I created the Sign up because its required to have a Sign up page.
 10. Add a summary content in the home component for each user.
