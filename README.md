@@ -118,28 +118,28 @@ npm run dev
 ## Frontend Routing Table
 | **Route Name**                | **URL**                         | **HTTP Verb** | **Description**                              |
 | ----------------------------- | ------------------------------- | ------------- | -------------------------------------------- |
-| MainPage                    | '/'                             | GET           | Landing page (welcome + logo)                |
-| HomePage                    | '/home'                         | GET           | Main dashboard/homepage after login          |
-| Logout                      | '/logout'                       | GET           | Logs out the current user                    |
-| AddChild                    | '/add'                          | POST           | Form to add a new child (supervisor only)    |
-| ChildrenList                | '/children'                     | GET           | List of all children (supervisor only)       |
-| ChildDetails                | '/children/:id'                 | GET           | Detailed view of a specific child            |
-| EditChild                   | '/children/:id/edit'            | PATCH           | Edit form for a specific child               |
-| AddAchievement              | '/achievements/add'             | POST           | Form to add a new achievement                |
-| ChildAchievementList        | '/children/:id/achievements/'   | GET           | List of achievements for a specific child    |
-| EditAchievement             | '/achievements/:id/edit'        | PATCH           | Edit a specific achievement                  |
-| AllChildrenAchievementsList | '/children-achievements/'       | GET           | List of all achievements across all children |
-| MyChildren                  | '/my-children'                  | GET           | View children linked to the logged-in parent |
-| MyChildAttendance           | '/children/:id/attendance'      | GET           | View attendance of a specific child          |
-| SectionsList                | '/sections'                     | GET           | List all sections                            |
-| ViewSectionAttendance       | '/sections/:id/attendance'      | GET           | View attendance for a specific section       |
-| ChildrenInSectionList       | '/sections/:id/children/'       | GET           | View children in a specific section          |
-| AddAttendance               | '/sections/:id/attendance/add/' | POST           | Add attendance record for a section          |
-| EditAttendance              | '/attendance/:id/edit/'         | PATCH           | Edit a specific attendance record            |
-| AttendanceDropDown          | '/attendance'                   | GET           | Choose section to view attendance            |
-| Signup                      | '/signup'                       | POST           | User registration page                       |
-| Login                       | '/login'                        | GET           | User login page                              |
-| NotFound                    | '*'                             | GET           | Fallback for undefined routes (404 page)     |
+| MainPage                    | /                             | GET           | Landing page (welcome + logo)                |
+| HomePage                    | /home                         | GET           | Main dashboard/homepage after login          |
+| Logout                      | /logout                       | GET           | Logs out the current user                    |
+| AddChild                    | /add                          | POST           | Form to add a new child (supervisor only)    |
+| ChildrenList                | /children                     | GET           | List of all children (supervisor only)       |
+| ChildDetails                | /children/:id                 | GET           | Detailed view of a specific child            |
+| EditChild                   | /children/:id/edit            | PATCH           | Edit form for a specific child               |
+| AddAchievement              | /achievements/add             | POST           | Form to add a new achievement                |
+| ChildAchievementList        | /children/:id/achievements/   | GET           | List of achievements for a specific child    |
+| EditAchievement             | /achievements/:id/edit        | PATCH           | Edit a specific achievement                  |
+| AllChildrenAchievementsList | /children-achievements/       | GET           | List of all achievements across all children |
+| MyChildren                  | /my-children                  | GET           | View children linked to the logged-in parent |
+| MyChildAttendance           | /children/:id/attendance      | GET           | View attendance of a specific child          |
+| SectionsList                | /sections                     | GET           | List all sections                            |
+| ViewSectionAttendance       | /sections/:id/attendance      | GET           | View attendance for a specific section       |
+| ChildrenInSectionList       | /sections/:id/children/       | GET           | View children in a specific section          |
+| AddAttendance               | /sections/:id/attendance/add/ | POST           | Add attendance record for a section          |
+| EditAttendance              | /attendance/:id/edit/         | PATCH           | Edit a specific attendance record            |
+| AttendanceDropDown          | /attendance                   | GET           | Choose section to view attendance            |
+| Signup                      | /signup                       | POST           | User registration page                       |
+| Login                       | /login                        | GET           | User login page                              |
+| NotFound                    | *                             | GET           | Fallback for undefined routes (404 page)     |
 
 ## IceBox Features
 
