@@ -48,7 +48,7 @@ The system is built to make daycare management easier, more organized, and help 
 
 ## Backend Repository Link
 
-[CareNest Backend Repo](https://git.generalassemb.ly/ghada001/care-nest-backend)
+[CareNest Backend Repo](https://github.com/ghd1010/care-nest-backend)
 
 ## Getting Started / Code Installation
 
@@ -56,7 +56,7 @@ To set up the project locally, follow these steps:
 
 ### 1. Clone the Repository:
 
-* **Frontend:** `git clone https://git.generalassemb.ly/ghada001/care-nest-frontend.git`
+* **Frontend:** `git clone https://github.com/ghd1010/care-nest-frontend.git`
 
 ### 2. Frontend Setup:
 
