@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+:root {
+  font-family: 'Fredoka', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(254, 250, 240);
+  color: rgb(38, 37, 37);
+  font-family: 'Fredoka', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* --my updates-- */
+.parent_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; 
+  padding: 0;
+  margin: 0;
+}
+
+.parent_nav li a {
+  text-decoration: none;
+}
+
+.supervisor_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; 
+  padding: 0;
+  margin: 0;
+}
+
+.supervisor_nav li  {
+  text-decoration: none;
+}
+
+.achievement-text {
+  margin-top: 0.5rem;
+} 
+
+.achievement_card1,
+.achievement_card2,
+.achievement_card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1px;
+}
+.achievement_card1{
+  background-color: rgba(174, 222, 182, 0.631);
+}
+.achievement_card2{
+  background-color: rgba(241, 154, 171, 0.568);
+}
+.achievement_card3{
+  background-color: rgba(254, 231, 129, 0.825);
+}
+
+.achievement_card1 img,
+.achievement_card2 img,
+.achievement_card3 img {
+  border-radius: 15px;
+  height: 100px;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.achievement_text {
+  font-size: 12px;
+  margin: 1px;
+  padding: 0;
+}
+
+.child_list ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem; 
+  padding: 0;
+  margin: 0;
+}
+
+.child_list h2,
+.child_list h3 {
+  text-align: center;
+}
+
+.achievement_card1 button,
+.achievement_card2 button,
+.achievement_card3 button {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin: 4px;
+  background: rgb(178, 218, 228);
+  cursor: pointer;
+}
+.child_list h3 {
+  background-color:rgb(178, 218, 228);
+}
+
+button {
+  background-color: rgb(178, 219, 228);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  width: 100;
+  margin: 0 10px;
+}
+
+.main-page {
+  font-family: 'Fredoka', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap:0rem;
+}
+.main-page h1,h3 {
+  padding: 0rem;
+  margin: 0rem;
+}
+.logo-main-page {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.welcome {
+  text-align: center;
+  padding: 10rem;
+  padding-bottom: 0rem;
+}
+
+header {
+  background-color: rgb(178, 218, 228);
+  width: 100%;
+  padding: 1rem 2rem;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Fredoka', sans-serif;
+  padding-left: 5rem;
+}
+
+.header-buttons button {
+  background-color:rgb(255, 255, 255);
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+  background-color: rgb(214, 166, 213);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: rgb(178, 218, 228);
+  text-align: center;
+}
+
+.logo-main-page img{
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  margin: 0rem 0;
+}
+
+.logo-main-page {
+  width: 300px;
+  height: auto;
+  align-self: flex-start; 
+  margin-left: 0;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* signup */
+.signup-wrapper {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  margin: 80px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-title {
+  color: rgb(38, 37, 37);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgb(178, 219, 228);
+  box-shadow: 0 0 5px rgba(178, 219, 228, 0.8);
+}
+
+.signup-button {
+  background-color: rgb(178, 219, 228);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-button:hover {
+  background-color: rgb(214, 166, 213);
+  transform: translateY(-2px);
+}
+
+/* login */
+.login-wrapper {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  margin: 80px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  color: rgb(38, 37, 37);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgb(178, 219, 228);
+  box-shadow: 0 0 5px rgba(178, 219, 228, 0.8);
+}
+
+.login-button {
+  background-color: rgb(178, 219, 228);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+  background-color: rgb(214, 166, 213);
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #d9534f;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.user-nav {
+  background-color: rgb(178, 219, 228);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-nav .logo-text {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(255, 255, 255); 
+}
+
+.user-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+  margin-right: 5rem;
+}
+
+.nav-item a:hover {
+  color: rgb(214, 166, 213); 
+}
+
+.logo-image {
+  height: 100px; 
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.home-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;   
+  justify-content: center; 
+  height: 30vh;        
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  margin-left:50px;
+  font-size: larger;
+}
+
+.children-list {
+  text-align: center;
+  padding: 3rem;
+}
+
+.children-list ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+.children-list li {
+  margin-bottom: 0.5rem;
+}
+
+.children-list a {
+  color: rgb(38, 37, 37);
+  font-weight: 500;
+}
+
+.children-list a:hover {
+  color: rgb(214, 166, 213);
+}
+
+.children-list button {
+  margin-top: 1rem;
+  background-color: rgb(178, 219, 228);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.children-list button:hover {
+  background-color: rgb(214, 166, 213);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-family: 'Fredoka', sans-serif;
+}
+.form-container button {
+  margin-top: 20px;
+}
+
+.sectionlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  font-family: 'Fredoka', sans-serif;
+}
+
+button:hover {
+  background-color: rgb(214, 166, 213);
+  transform: translateY(-2px);
+}
+
+.sectionlist button{
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.section-atten-view {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.section-atten-view h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-atten-view button {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  padding: 8px 16px;
+}
+
+.section-atten-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.section-atten-view th,
+.section-atten-view td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.section-atten-view th {
+  font-weight: bold;
+}
+
+.ach-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  font-family: 'Fredoka', sans-serif;
+}
+
+#h1-ahci {
+  text-align: center;
+}
